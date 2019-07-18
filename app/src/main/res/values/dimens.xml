@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="paddingSmall">6dp</dimen>
+    <dimen name="textSizeBig">24sp</dimen>
+    <dimen name="textSize">22sp</dimen>
+    <dimen name="textSizeSmall">16sp</dimen>
+    <dimen name="paddingLeft">16dp</dimen>
+    <dimen name="editViewPercentPortrait">0.5</dimen>
+    <dimen name="buttonPercentPortrait">0.25</dimen>
+    <dimen name="editViewPercentLandscape">0.18</dimen>
+    <dimen name="buttonPercentLandscape">0.18</dimen>
+    <dimen name="imageLayoutWidth">128dp</dimen>
+    <dimen name="imageLayoutHeight">32dp</dimen>
+</resources>

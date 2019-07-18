@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+        <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="@dimen/imageLayoutWidth"
+                android:layout_height="@dimen/imageLayoutHeight"
+                app:layout_constraintBottom_toBottomOf="@id/updated_at"
+                app:layout_constraintRight_toRightOf="@id/updated_at"
+                app:layout_constraintTop_toTopOf="@id/updated_at"
+                android:contentDescription="@string/refresh_button"
+                app:srcCompat="@drawable/update" />
+
+        <TextView
+                android:id="@+id/chart_name"
+                style="@style/TextView"
+                android:textColor="@color/colorText"
+                app:layout_constraintBottom_toTopOf="@+id/updated_at"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_weight="1"/>
+
+        <TextView
+                android:id="@+id/updated_at"
+                style="@style/TextView"
+                android:textSize="@dimen/textSizeSmall"
+                app:layout_constraintBottom_toTopOf="@+id/currency1"
+                app:layout_constraintTop_toBottomOf="@+id/chart_name"
+                app:layout_constraintVertical_weight="1"/>
+
+        <TextView
+                android:id="@+id/currency1"
+                style="@style/TextView"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/currency2"
+                app:layout_constraintTop_toBottomOf="@+id/updated_at"
+                app:layout_constraintVertical_weight="2"/>
+
+        <TextView
+                android:id="@+id/currency2"
+                style="@style/TextView"
+                android:background="@color/colorAccentLight"
+                app:layout_constraintBottom_toTopOf="@+id/currency3"
+                app:layout_constraintTop_toBottomOf="@+id/currency1"
+                app:layout_constraintVertical_weight="2"/>
+
+        <TextView
+                android:id="@+id/currency3"
+                style="@style/TextView"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/currency2"
+                app:layout_constraintVertical_weight="2"/>
+
+        <EditText
+                android:id="@+id/amount_of_currency1"
+                style="@style/EditViewLandscape"
+                android:hint="@string/currency1"
+                app:layout_constraintTop_toTopOf="@id/currency1"
+                app:layout_constraintRight_toLeftOf="@id/amount_of_bitcoins1"
+                app:layout_constraintBottom_toBottomOf="@id/currency1"/>
+
+        <EditText
+                android:id="@+id/amount_of_bitcoins1"
+                style="@style/EditViewLandscape"
+                android:hint="@string/bitcoin"
+                app:layout_constraintTop_toTopOf="@id/currency1"
+                app:layout_constraintRight_toLeftOf="@id/calculate1"
+                app:layout_constraintBottom_toBottomOf="@id/currency1"/>
+
+        <Button
+                android:id="@+id/calculate1"
+                style="@style/ButtonLandscape"
+                android:text="@string/calculate"
+                app:layout_constraintTop_toTopOf="@id/currency1"
+                app:layout_constraintRight_toLeftOf="@id/clear1"
+                app:layout_constraintBottom_toBottomOf="@id/currency1"/>
+
+        <Button
+                android:id="@+id/clear1"
+                style="@style/ButtonLandscape"
+                android:text="@string/clear"
+                android:layout_marginEnd="@dimen/margin"
+                app:layout_constraintTop_toTopOf="@id/currency1"
+                app:layout_constraintRight_toRightOf="@id/currency1"
+                app:layout_constraintBottom_toBottomOf="@id/currency1"/>
+
+        <EditText
+                android:id="@+id/amount_of_currency2"
+                style="@style/EditViewLandscape"
+                android:hint="@string/currency2"
+                app:layout_constraintTop_toTopOf="@id/currency2"
+                app:layout_constraintRight_toLeftOf="@id/amount_of_bitcoins2"
+                app:layout_constraintBottom_toBottomOf="@id/currency2"/>
+
+        <EditText
+                android:id="@+id/amount_of_bitcoins2"
+                style="@style/EditViewLandscape"
+                android:hint="@string/bitcoin"
+                app:layout_constraintTop_toTopOf="@id/currency2"
+                app:layout_constraintRight_toLeftOf="@id/calculate2"
+                app:layout_constraintBottom_toBottomOf="@id/currency2"/>
+
+        <Button
+                android:id="@+id/calculate2"
+                style="@style/ButtonLandscape"
+                android:text="@string/calculate"
+                app:layout_constraintTop_toTopOf="@id/currency2"
+                app:layout_constraintRight_toLeftOf="@id/clear2"
+                app:layout_constraintBottom_toBottomOf="@id/currency2"/>
+
+        <Button
+                android:id="@+id/clear2"
+                style="@style/ButtonLandscape"
+                android:text="@string/clear"
+                android:layout_marginEnd="@dimen/margin"
+                app:layout_constraintTop_toTopOf="@id/currency2"
+                app:layout_constraintRight_toRightOf="@id/currency2"
+                app:layout_constraintBottom_toBottomOf="@id/currency2"/>
+
+        <EditText
+                android:id="@+id/amount_of_currency3"
+                style="@style/EditViewLandscape"
+                android:hint="@string/currency3"
+                app:layout_constraintTop_toTopOf="@id/currency3"
+                app:layout_constraintRight_toLeftOf="@id/amount_of_bitcoins3"
+                app:layout_constraintBottom_toBottomOf="@id/currency3"/>
+
+        <EditText
+                android:id="@+id/amount_of_bitcoins3"
+                style="@style/EditViewLandscape"
+                android:hint="@string/bitcoin"
+                app:layout_constraintTop_toTopOf="@id/currency3"
+                app:layout_constraintRight_toLeftOf="@id/calculate3"
+                app:layout_constraintBottom_toBottomOf="@id/currency3"/>
+
+        <Button
+                android:id="@+id/calculate3"
+                style="@style/ButtonLandscape"
+                android:text="@string/calculate"
+                app:layout_constraintTop_toTopOf="@id/currency3"
+                app:layout_constraintRight_toLeftOf="@id/clear3"
+                app:layout_constraintBottom_toBottomOf="@id/currency3"/>
+
+        <Button
+                android:id="@+id/clear3"
+                style="@style/ButtonLandscape"
+                android:text="@string/clear"
+                android:layout_marginEnd="@dimen/margin"
+                app:layout_constraintTop_toTopOf="@id/currency3"
+                app:layout_constraintRight_toRightOf="@id/currency3"
+                app:layout_constraintBottom_toBottomOf="@id/currency3"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

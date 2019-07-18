@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="layout">@dimen/paddingLeft</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+    </style>
+
+    <style name="EditViewPortrait">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintWidth_default">percent</item>
+        <item name="layout_constraintWidth_percent">@dimen/editViewPercentPortrait</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:paddingTop">@dimen/paddingSmall</item>
+        <item name="android:paddingBottom">@dimen/paddingSmall</item>
+        <item name="android:background">@color/textBackground</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="EditViewLandscape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintWidth_default">percent</item>
+        <item name="layout_constraintWidth_percent">@dimen/editViewPercentLandscape</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:background">@color/textBackground</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="ButtonPortrait">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintWidth_default">percent</item>
+        <item name="layout_constraintWidth_percent">@dimen/buttonPercentPortrait</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="ButtonLandscape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintWidth_default">percent</item>
+        <item name="layout_constraintWidth_percent">@dimen/buttonPercentLandscape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+</resources>

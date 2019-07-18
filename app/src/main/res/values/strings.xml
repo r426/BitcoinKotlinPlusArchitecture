@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Price Index</string>
+    <string name="toast_message">Please wait one minute.</string>
+    <string name="currency1">$</string>
+    <string name="currency2">£</string>
+    <string name="currency3">€</string>
+    <string name="bitcoin">Ƀ</string>
+    <string name="refresh_button">refresh button</string>
+    <string name="calculate">calculate</string>
+    <string name="clear">clear</string>
+</resources>
