@@ -1,9 +1,5 @@
 package com.ryeslim.bitcoinkotlinplusarchitecture.data
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-
 data class TheCurrency (val code: String, val symbol: String, val rate: String, val description: String, val rateFloat: Float)
 
 data class TheTime (val updated: String, val updatedISO: String, val updateduk: String)
